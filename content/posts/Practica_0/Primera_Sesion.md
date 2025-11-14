@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-# ## **1. Sintaxis y uso de Markdown**
+### **1. Sintaxis y uso de Markdown**
 
 Markdown es un lenguaje de marcado ligero que permite crear documentos con formato de una manera rápida y sencilla utilizando únicamente texto plano. Se utiliza ampliamente en GitHub, documentación técnica, blogs y sitios estáticos.
 

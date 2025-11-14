@@ -1,8 +1,8 @@
 ---
-title: "PortafolioPP2025"
+title: "💻PortafolioPP2025"
 ---
 
-# Bienvenido a mi Portafolio
+# 📚Bienvenido a mi Portafolio
 
 Este es mi sitio estático donde publico mis prácticas.
 

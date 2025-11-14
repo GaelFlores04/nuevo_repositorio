@@ -1,7 +1,8 @@
 ---
-title: "Práctica 0: Markdown, Git, Hugo y GitHub Actions"
-date: 2025-11-14
+title: "Práctica 0"
 draft: false
 ---
+
+Bienvenido a la Práctica 0. Aquí encontrarás las diferentes sesiones.
 
 

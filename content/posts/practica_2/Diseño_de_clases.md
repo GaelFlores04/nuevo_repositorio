@@ -4,9 +4,7 @@ date: 2025-11-14
 draft: false
 ---
 
-# Diseño de clases (UML textual + explicación)
 
-Nota final: 0
 
 # Diseño de clases (UML textual + explicación)
 

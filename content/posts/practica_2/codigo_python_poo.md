@@ -7,11 +7,7 @@ draft: false
 
 # Codigo Migrado en python(POO)
 
-Nota final: 0
 
-## 
-
-# 1) Código Python (archivo sugerido: `biblioteca_poo.py`)
 
 Guarda este archivo en la raíz del proyecto o en una carpeta `biblioteca_python/`. Es autocontenido y usa JSON (`data.json`) para persistencia.
 

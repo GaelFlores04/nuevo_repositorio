@@ -4,7 +4,7 @@ date: 2025-11-14
 draft: false
 ---
 
-# Práctica: Migración de Biblioteca de C a Python (POO)
+# Reporte de Practica: Migración de Biblioteca de C a Python (POO)
 
 ## Objetivo
 Migrar el programa de Biblioteca originalmente escrito en C (con estructuras) hacia una versión en Python usando Programación Orientada a Objetos (POO). Implementar clases para Biblioteca, Usuarios e Ítems (libros, revistas) e incluir herencia, encapsulamiento, abstracción y polimorfismo. Además implementar persistencia sencilla (JSON), búsquedas, préstamos y devoluciones.

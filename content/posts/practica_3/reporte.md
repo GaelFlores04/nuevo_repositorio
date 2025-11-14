@@ -1,10 +1,7 @@
-#  Reporte de Laboratorio  
-**Práctica:** Instalación del entorno Haskell y desarrollo de aplicación TODO  
-**Materia:** Programación Funcional  
-**Alumno:** [Jorge Roel Vasquez ]  
-**Fecha:** [C]  
-**Profesor:** [Carlos Gallegos]
-
+---
+title: "Práctica 3: Haskell"
+date: 2025-11-14
+draft: false
 ---
 
 ##  Objetivo

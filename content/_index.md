@@ -6,6 +6,4 @@ title: "PortafolioPP2025"
 
 Este es mi sitio estático donde publico mis prácticas.
 
-- 📄 [Práctica 0](posts/Practica_0/)
-- 📄 [Práctica 1](posts/Practica_1/)
 - 🗂️ [Mi repositorio en GitHub](https://github.com/AESRJ/AESRJ.github.io)

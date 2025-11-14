@@ -193,7 +193,6 @@ Cada archivo del repositorio aplica estos elementos de forma práctica.
 
 ## **4. Enlaces Requeridos**
 - **Repositorio del portafolio:** https://github.com/gallegosj89/portafolio
-- **Sitio estático publicado:** *(añadir tu URL de GitHub Pages aquí)*
 
 ---
 

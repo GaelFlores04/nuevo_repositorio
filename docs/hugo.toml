@@ -61,4 +61,5 @@ paginate = 10
 
   [[menu.main]]
     name = "Proyectos"
-    url =
+    url = "/proyectos/"
+    weight = 5

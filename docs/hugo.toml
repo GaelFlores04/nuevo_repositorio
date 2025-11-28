@@ -3,7 +3,9 @@ languageCode = "es-mx"
 title = "PortafolioPP2025"
 theme = "PaperMod"
 
-paginate = 10
+[pagination]
+  pagerSize = 10
+
 
 [params]
   author = "Gael Flores"

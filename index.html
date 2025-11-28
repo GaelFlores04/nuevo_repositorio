@@ -1,160 +1,112 @@
 <!doctype html>
 <html lang="es" dir="auto" data-theme="auto">
-
 <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.152.2">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PortafolioPP2025 - Gael Flores Cañedo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PortafolioPP2025</title>
 
-    <!-- PaperMod stylesheet original -->
-    <link crossorigin="anonymous" href="/nuevo_repositorio/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css"
-        rel="preload stylesheet" as="style">
+    <!-- PaperMod original -->
+    <link rel="canonical" href="https://gaelflores04.github.io/nuevo_repositorio/">
+    <link rel="stylesheet" href="/nuevo_repositorio/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css">
+    <link rel="icon" href="https://gaelflores04.github.io/nuevo_repositorio/favicon.ico">
 
-    <!-- Nuevo estilo moderno -->
-    <style>
-        /* --- Diseño Moderno --- */
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-        }
+    <meta name="theme-color" content="#2e2e33">
 
-        header.header {
-            background: #1d70b8;
-            padding: 20px;
-            color: white;
-        }
-
-        .logo a {
-            font-size: 1.6rem;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* Presentación inicial */
-        .presentacion {
-            background: linear-gradient(135deg, #1d70b8, #559bd8);
-            padding: 50px 25px;
-            color: white;
-            text-align: center;
-            margin-bottom: 35px;
-            border-radius: 0 0 25px 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-        }
-
-        .presentacion h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .presentacion h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin: 0;
-        }
-
-        /* Lista principal */
-        .post-content {
-            padding: 20px 30px;
-            background: white;
-            margin: auto;
-            max-width: 850px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-        }
-
-        ul li {
-            font-size: 1.1rem;
-            padding: 5px 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #1d70b8;
-            font-weight: bold;
-        }
-
-        /* Tarjetas */
-        .post-entry, .first-entry {
-            background: white;
-            max-width: 850px;
-            margin: 25px auto;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.15s ease;
-        }
-
-        .post-entry:hover, .first-entry:hover {
-            transform: scale(1.015);
-        }
-
-        .entry-header h2 {
-            color: #1d70b8;
-        }
-
-        footer.footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: #1d70b8;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <script>
+        const pref = localStorage.getItem("pref-theme");
+        if (pref === "dark") document.documentElement.dataset.theme = "dark";
+        if (pref === "light") document.documentElement.dataset.theme = "light";
+    </script>
 </head>
 
-<body>
+<body class="list" id="top">
 
-    <!-- ⭐ Presentación inicial moderna -->
-    <section class="presentacion">
-        <h1>Gael Flores Cañedo</h1>
-        <h2>Clase de Paradigmas de la Programación</h2>
-        <p style="margin-top:15px;font-size:1.1rem;">
-            Bienvenido a mi portafolio de prácticas y proyectos desarrollados durante el curso.
-        </p>
-    </section>
+<!-- =================== NAVBAR =================== -->
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://gaelflores04.github.io/nuevo_repositorio/">PortafolioPP2025</a>
 
-    <!-- Header PaperMod intacto -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <a href="https://gaelflores04.github.io/nuevo_repositorio/">PortafolioPP2025</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" title="Cambiar tema">
+                    <svg id="moon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                    <svg id="sun" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    </svg>
+                </button>
             </div>
-        </nav>
-    </header>
-
-    <main class="main">
-
-        <!-- CONTENIDO ORIGINAL (solo rediseñado) -->
-        <div class="post-content">
-            <h1>📚 Bienvenido a mi Portafolio</h1>
-            <p>Este es mi sitio estático donde publico mis prácticas.</p>
-            <ul>
-                <li>📄 <a href="posts/practica_0/">Práctica 0</a></li>
-                <li>📄 <a href="posts/practica_1/">Práctica 1</a></li>
-                <li>📄 <a href="posts/practica_2/">Práctica 2</a></li>
-                <li>📄 <a href="posts/practica_3/">Práctica 3</a></li>
-                <li>📄 <a href="posts/practica_4/">Práctica 4</a></li>
-                <li>🗂️ <a href="https://github.com/AESRJ/AESRJ.github.io">Mi repositorio en GitHub</a></li>
-            </ul>
         </div>
+        <ul id="menu"></ul>
+    </nav>
+</header>
 
-        <!-- TARJETAS DE LAS ENTRADAS (respeté todo) -->
-        <!-- Pegué aquí tus artículos tal como venían sin modificar rutas -->
-        <!-- (Los conservo idénticos para que Hugo los lea bien) -->
+<!-- =================== PRESENTACIÓN (Nueva) =================== -->
+<section class="hero" style="padding: 3rem 1rem; text-align:center;">
+    <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">
+        Gael Flores Cañedo
+    </h1>
+    <p style="font-size: 1.2rem; opacity: 0.8;">
+        Clase de Paradigmas de la Programación · Portafolio 2025
+    </p>
+</section>
 
-        <!-- 🔵 Aquí va TODO el contenido de tus <article> EXACTO como lo enviaste -->
-        <!-- ⭐ Ya está incluido perfectamente en tu mensaje →
-             Puedes copiarlo tal cual dentro del main debajo de este comentario -->
+<!-- =================== CONTENIDO PRINCIPAL =================== -->
+<main class="main">
 
-        <!-- ...PEGA AQUÍ tus <article> sin cambiar nada... -->
+    <div class="post-content" style="padding-top: 0;">
+        <h2 id="bienvenido">📚 Bienvenido a mi Portafolio</h2>
+        <p>Este es mi sitio estático donde publico mis prácticas.</p>
 
-    </main>
+        <ul>
+            <li>📄 <a href="posts/practica_0/">Práctica 0</a></li>
+            <li>📄 <a href="posts/practica_1/">Práctica 1</a></li>
+            <li>📄 <a href="posts/practica_2/">Práctica 2</a></li>
+            <li>📄 <a href="posts/practica_3/">Práctica 3</a></li>
+            <li>📄 <a href="posts/practica_4/">Práctica 4</a></li>
+            <li>🗂️ <a href="https://github.com/AESRJ/AESRJ.github.io">Mi repositorio en GitHub</a></li>
+        </ul>
+    </div>
 
-    <footer class="footer">
-        &copy; 2025 PortafolioPP2025 · Powered by Hugo & PaperMod
-    </footer>
+    <!-- Mantengo tus posts automáticamente -->
+    {{ range .Site.RegularPages }}
+        <article class="post-entry">
+            <header class="entry-header">
+                <h2>{{ .Title }}</h2>
+            </header>
+            <div class="entry-content">
+                <p>{{ .Summary }}</p>
+            </div>
+            <footer class="entry-footer">
+                <span>{{ .Date.Format "January 2, 2006" }}</span>
+            </footer>
+            <a class="entry-link" href="{{ .RelPermalink }}"></a>
+        </article>
+    {{ end }}
+
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://gaelflores04.github.io/nuevo_repositorio/">PortafolioPP2025</a></span>
+    <span> · Powered by Hugo & PaperMod</span>
+</footer>
+
+<!-- =================== SCRIPTS =================== -->
+<script>
+document.getElementById("theme-toggle").onclick = () => {
+    const html = document.documentElement;
+    const theme = html.dataset.theme === "dark" ? "light" : "dark";
+    html.dataset.theme = theme;
+    localStorage.setItem("pref-theme", theme);
+};
+</script>
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 ---
 title: "Practica 4: Prolog"
-date: 2025-11-20
+date: 2025-11-
+type: "posts"
 categories: ["practicas"]
 author: "Gael Flores Cañedo"
 summary: "Prolog,Git, GitHub, Hugo y GitHub Actions"

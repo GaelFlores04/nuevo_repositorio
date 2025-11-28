@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Práctica 0 on PortafolioPP2025</title><link>https://gaelflores.github.io/posts/practica_0/</link><description>Recent content in Práctica 0 on PortafolioPP2025</description><generator>Hugo -- 0.152.2</generator><language>en-us</language><lastBuildDate>Fri, 14 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gaelflores.github.io/posts/practica_0/index.xml" rel="self" type="application/rss+xml"/><item><title>Práctica 0: Markdown, Git, Hugo y GitHub Actions</title><link>https://gaelflores.github.io/posts/practica_0/primera_sesion/</link><pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate><guid>https://gaelflores.github.io/posts/practica_0/primera_sesion/</guid><description>&lt;h3 id="1-sintaxis-y-uso-de-markdown"&gt;&lt;strong&gt;1. Sintaxis y uso de Markdown&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Markdown es un lenguaje de marcado ligero que permite crear documentos con formato de una manera rápida y sencilla utilizando únicamente texto plano. Se utiliza ampliamente en GitHub, documentación técnica, blogs y sitios estáticos.&lt;/p&gt;
+&lt;h3 id="11-qué-es-markdown"&gt;&lt;strong&gt;1.1 ¿Qué es Markdown?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Markdown fue creado por John Gruber con el objetivo de proporcionar una sintaxis fácil de leer y escribir, que pueda convertirse a HTML de manera efectiva.&lt;/p&gt;</description></item><item><title>Práctica 0: Markdown, Git, Hugo y GitHub Actions</title><link>https://gaelflores.github.io/posts/practica_0/segunda_sesion/</link><pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate><guid>https://gaelflores.github.io/posts/practica_0/segunda_sesion/</guid><description>&lt;h2 id="2-uso-de-git-y-github"&gt;2. Uso de Git y GitHub&lt;/h2&gt;
+&lt;p&gt;2.1 ¿Qué es Git?&lt;/p&gt;
+&lt;p&gt;Git es un sistema de control de versiones que permite guardar el historial completo de un proyecto, trabajar en equipo, y manejar cambios de forma ordenada y segura.&lt;/p&gt;
+&lt;p&gt;2.2 ¿Qué es GitHub?&lt;/p&gt;
+&lt;p&gt;GitHub es una plataforma que almacena repositorios Git en la nube, permitiendo:&lt;/p&gt;
+&lt;p&gt;Respaldo del código&lt;/p&gt;
+&lt;p&gt;Colaboración&lt;/p&gt;
+&lt;p&gt;Publicación de proyectos&lt;/p&gt;
+&lt;p&gt;Uso de GitHub Pages y GitHub Actions&lt;/p&gt;
+&lt;h2 id="23-comandos-esenciales-de-git"&gt;2.3 Comandos esenciales de Git&lt;/h2&gt;
+&lt;p&gt;Inicializar repositorio
+git init&lt;/p&gt;</description></item><item><title>Práctica 0: Markdown, Git, Hugo y GitHub Actions</title><link>https://gaelflores.github.io/posts/practica_0/tercera_sesion/</link><pubDate>Fri, 14 Nov 2025 00:00:00 +0000</pubDate><guid>https://gaelflores.github.io/posts/practica_0/tercera_sesion/</guid><description>&lt;h2 id="3-generación-de-páginas-estáticas-con-hugo-y-github-actions"&gt;3. Generación de páginas estáticas con Hugo y GitHub Actions&lt;/h2&gt;
+&lt;p&gt;3.1 ¿Qué es Hugo?&lt;/p&gt;
+&lt;p&gt;Hugo es un generador de sitios estáticos extremadamente rápido.
+Permite crear blogs, portafolios, documentación y páginas sin usar bases de datos.&lt;/p&gt;
+&lt;p&gt;Ventajas:&lt;/p&gt;
+&lt;p&gt;Muy rápido&lt;/p&gt;
+&lt;p&gt;Basado en Markdown&lt;/p&gt;
+&lt;p&gt;Fácil de mantener&lt;/p&gt;
+&lt;p&gt;Ideal para GitHub Pages&lt;/p&gt;
+&lt;p&gt;3.2 ¿Qué es GitHub Actions?&lt;/p&gt;
+&lt;p&gt;GitHub Actions es un sistema de automatización integrado en GitHub.
+Permite ejecutar tareas automáticamente, como:&lt;/p&gt;
+&lt;p&gt;Construir tu sitio Hugo&lt;/p&gt;</description></item></channel></rss>

@@ -1,6 +1,6 @@
 baseURL = "https://gaelflores04.github.io/nuevo_repositorio/"
 languageCode = "es-mx"
-title = "PortafolioPP2025"
+title = "Portafolio_Paradigmas_2025"
 theme = "PaperMod"
 
 [pagination]

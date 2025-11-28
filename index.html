@@ -1,63 +1,84 @@
-<!DOCTYPE html>
-<html lang="es" dir="auto">
+<!doctype html>
+<html lang="es" dir="auto" data-theme="auto">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio de Evidencias – Gael Flores Cañedo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Portafolio de Evidencias – Paradigmas de la Programación</title>
 
-    <!-- Meta para PaperMod -->
-    <meta name="description" content="Portafolio de evidencias de la clase Paradigmas de la Programación, elaborado por Gael Flores Cañedo." />
+    <meta name="description" content="Portafolio de evidencias del alumno Gael Flores Cañedo para la materia de Paradigmas de la Programación.">
+    <meta name="author" content="Gael Flores Cañedo">
+
+    <!-- PaperMod stylesheet (se mantiene desde Hugo automáticamente) -->
+    {{ partial "head.html" . }}
 </head>
 
-<body class="list">
+<body class="list" id="top">
 
-    <main class="main">
-        <header class="page-header">
-            <h1>Portafolio de Evidencias</h1>
-            <p>Clase: <strong>Paradigmas de la Programación</strong></p>
-            <p><strong>Autor:</strong> Gael Flores Cañedo</p>
-        </header>
-
-        <section class="presentation" style="margin-bottom: 2rem;">
-            <p>
-                Bienvenido a mi portafolio de evidencias del curso <strong>Paradigmas de la Programación</strong>.  
-                Aquí recopilo mis prácticas, avances, proyectos y actividades realizadas durante el semestre.  
-                Este sitio forma parte de mi proceso de aprendizaje y desarrollo como programador.
-            </p>
-
-            <p>Puedes visitar mis repositorios y perfil de GitHub en los siguientes enlaces:</p>
-
-            <ul>
-                <li>🔗 Repo principal:  
-                    <a href="https://github.com/GaelFlores04/nuevo_repositorio.git" target="_blank">
-                        github.com/GaelFlores04/nuevo_repositorio
-                    </a>
-                </li>
-
-                <li>🐙 Mi GitHub:  
-                    <a href="https://github.com/GaelFlores04" target="_blank">
-                        github.com/GaelFlores04
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Mis Prácticas</h2>
-
-            <div class="post-content">
-                <ul>
-                    <li>📄 <a href="posts/practica_0/">Práctica 0</a></li>
-                    <li>📄 <a href="posts/practica_1/">Práctica 1</a></li>
-                    <li>📄 <a href="posts/practica_2/">Práctica 2</a></li>
-                    <li>📄 <a href="posts/practica_3/">Práctica 3</a></li>
-                    <li>📄 <a href="posts/practica_4/">Práctica 4</a></li>
-                </ul>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="{{ .Site.BaseURL }}" title="Portafolio de Evidencias">
+                Portafolio de Evidencias
+            </a>
+            <div class="logo-switches">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg id="moon" width="24" height="18" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                    <svg id="sun" width="24" height="18" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
             </div>
-        </section>
-    </main>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+
+    <div class="post-content">
+        <h1>📚 Portafolio de Evidencias</h1>
+        <p>
+            Bienvenido al portafolio del alumno <strong>Gael Flores Cañedo</strong>, correspondiente a la materia 
+            <strong>Paradigmas de la Programación</strong>.  
+            Aquí encontrarás todas las prácticas realizadas durante el curso.
+        </p>
+
+        <h2>📄 Prácticas</h2>
+        <ul>
+            <li>📄 <a href="posts/practica_0/">Práctica 0</a></li>
+            <li>📄 <a href="posts/practica_1/">Práctica 1</a></li>
+            <li>📄 <a href="posts/practica_2/">Práctica 2</a></li>
+            <li>📄 <a href="posts/practica_3/">Práctica 3</a></li>
+            <li>📄 <a href="posts/practica_4/">Práctica 4</a></li>
+        </ul>
+
+        <h2>🗂️ Repositorios del Alumno</h2>
+        <ul>
+            <li>🔗 <a href="https://github.com/GaelFlores04/nuevo_repositorio.git" target="_blank">
+                Repositorio del curso (Hugo + prácticas)
+            </a></li>
+
+            <li>🔗 <a href="https://github.com/GaelFlores04" target="_blank">
+                Perfil de GitHub de Gael Flores Cañedo
+            </a></li>
+        </ul>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <span>&copy; 2025 Portafolio de Evidencias</span>
+    <span> · Powered by Hugo & PaperMod</span>
+</footer>
 
 </body>
 </html>

@@ -2,6 +2,7 @@
 title: "Practica 2: Programación Orientada a Objetos"
 date: 2025-10-17
 categories: ["practicas"]
+type: "posts"
 author: "Gael Flores Cañedo"
 summary: "Reporte sobre la programacion orientada a objetos"
 tags: ["Python", "POO", "Programación funcional"]

@@ -1,8 +1,8 @@
 ---
 title: "Practica 4: Prolog"
 date: 2025-11-20
-type: "posts"
 categories: ["practicas"]
+type: "posts"
 author: "Gael Flores Cañedo"
 summary: "Prolog,Git, GitHub, Hugo y GitHub Actions"
 tags: ["Prolog",  "Instalación", "Hugo","MarkDown"]

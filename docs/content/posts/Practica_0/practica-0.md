@@ -2,6 +2,7 @@
 title: "Practica 0:Markdown, Git, GitHub, Hugo y GitHub Actions"
 date: 2025-08-15
 categories: ["practicas"]
+type: "posts"
 author: "Gael Flores Cañedo"
 summary: "Reporte de Markdown, Git, GitHub, Hugo y GitHub Actions"
 tags: ["Haskell", "GHCup", "Instalación", "Hugo","MarkDown"]

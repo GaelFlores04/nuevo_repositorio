@@ -1,4 +1,64 @@
-theme = "PaperMod"
 baseURL = "https://gaelflores04.github.io/nuevo_repositorio/"
-languageCode = 'en-us'
-title = 'PortafolioPP2025'
+languageCode = "es-mx"
+title = "PortafolioPP2025"
+theme = "PaperMod"
+
+paginate = 10
+
+[params]
+  author = "Gael Flores"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  comments = false
+
+  # -------- PORTADA -----------
+  homeInfoMode = true
+
+  [params.homeInfoParams]
+      Title = "Gael Flores – Portafolio 2025"
+      Content = "Portafolio académico del curso Paradigmas de la Programación. Aquí podrás ver mis prácticas, reportes y proyectos."
+      ImageUrl = "images/gael.jpeg"
+      ImageTitle = "Gael Flores"
+      ImageWidth = "160"
+      ImageHeight = "160"
+
+# -------- REDES SOCIALES --------
+[[params.social]]
+    name = "Github"
+    url = "https://github.com/GaelFlores04"
+
+[[params.social]]
+    name = "Email"
+    url = "gael.flores80@uabc.edu.mx"
+
+# -------- MENÚ SUPERIOR --------
+[menu]
+
+  [[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Prácticas"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Sobre mí"
+    url = "/sobre-mi/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contacto"
+    url = "/contacto/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Proyectos"
+    url =

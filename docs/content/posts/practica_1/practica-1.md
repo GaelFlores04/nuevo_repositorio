@@ -2,6 +2,7 @@
 title: "Practica 1:Elementos básicos de los lenguajes de programación"
 date: 2025-09-20
 categories: ["practicas"]
+type: "posts"
 author: "Gael Flores Cañedo"
 summary: "Git, GitHub, Hugo y GitHub Actions"
 tags: ["Haskell", "GHCup", "Instalación", "Hugo","MarkDown"]

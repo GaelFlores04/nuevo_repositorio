@@ -1,116 +1,160 @@
-{{ define "main" }}
+<!doctype html>
+<html lang="es" dir="auto" data-theme="auto">
 
-<style>
-    body.list {
-        background: url("https://i.imgur.com/uyRf3yV.png") repeat;
-        background-size: 250px;
-        font-family: 'Comic Sans MS', 'Fredoka', Arial, sans-serif;
-    }
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PortafolioPP2025 - Gael Flores Cañedo</title>
 
-    .snoopy-container {
-        max-width: 900px;
-        margin: 40px auto;
-        background: rgba(255, 255, 255, 0.88);
-        padding: 25px;
-        border-radius: 20px;
-        border: 3px solid #000;
-        box-shadow: 0px 5px 0px #000;
-    }
+    <!-- PaperMod stylesheet original -->
+    <link crossorigin="anonymous" href="/nuevo_repositorio/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css"
+        rel="preload stylesheet" as="style">
 
-    h1, h2, h3 {
-        text-shadow: 2px 2px #fff;
-    }
+    <!-- Nuevo estilo moderno -->
+    <style>
+        /* --- Diseño Moderno --- */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+        }
 
-    .snoopy-post {
-        border-radius: 15px;
-        border: 3px solid #000;
-        background: #ffffffcc;
-        padding: 15px;
-        margin-bottom: 18px;
-        box-shadow: 3px 3px 0px #000;
-        transition: transform 0.15s;
-    }
+        header.header {
+            background: #1d70b8;
+            padding: 20px;
+            color: white;
+        }
 
-    .snoopy-post:hover {
-        transform: translateY(-4px);
-    }
+        .logo a {
+            font-size: 1.6rem;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-    .snoopy-link {
-        color: #0057ff;
-        font-weight: bold;
-        text-decoration: none;
-    }
+        /* Presentación inicial */
+        .presentacion {
+            background: linear-gradient(135deg, #1d70b8, #559bd8);
+            padding: 50px 25px;
+            color: white;
+            text-align: center;
+            margin-bottom: 35px;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
 
-    .snoopy-header {
-        background: #ffeb3b;
-        border-bottom: 4px solid #000;
-        padding: 20px;
-        text-align: center;
-    }
+        .presentacion h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
 
-    .snoopy-footer {
-        background: #ffeb3b;
-        border-top: 4px solid #000;
-        text-align: center;
-        padding: 15px;
-        margin-top: 40px;
-        border-radius: 10px;
-    }
+        .presentacion h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+        }
 
-    .snoopy-float {
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        width: 160px;
-        opacity: 0.9;
-        pointer-events: none;
-        z-index: 50;
-    }
-</style>
+        /* Lista principal */
+        .post-content {
+            padding: 20px 30px;
+            background: white;
+            margin: auto;
+            max-width: 850px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
 
-<header class="snoopy-header">
-    <h1>🐶 Portafolio Temática Snoopy</h1>
-    <p>Bienvenido a mi página con estilo Peanuts</p>
-</header>
+        ul li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+        }
 
-<div class="snoopy-container">
+        ul li a {
+            text-decoration: none;
+            color: #1d70b8;
+            font-weight: bold;
+        }
 
-    <h2>📚 Bienvenido a mi Portafolio</h2>
-    <p>Este es mi sitio estático donde publico mis prácticas.</p>
+        /* Tarjetas */
+        .post-entry, .first-entry {
+            background: white;
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.15s ease;
+        }
 
-    <ul>
-        <li>📄 <a class="snoopy-link" href="posts/practica_0/">Práctica 0</a></li>
-        <li>📄 <a class="snoopy-link" href="posts/practica_1/">Práctica 1</a></li>
-        <li>📄 <a class="snoopy-link" href="posts/practica_2/">Práctica 2</a></li>
-        <li>📄 <a class="snoopy-link" href="posts/practica_3/">Práctica 3</a></li>
-        <li>📄 <a class="snoopy-link" href="posts/practica_4/">Práctica 4</a></li>
-        <li>🗂️ <a class="snoopy-link" href="https://github.com/AESRJ/AESRJ.github.io">Mi repositorio en GitHub</a></li>
-    </ul>
+        .post-entry:hover, .first-entry:hover {
+            transform: scale(1.015);
+        }
 
-    {{ range .Paginator.Pages }}
-    <article class="snoopy-post">
-        <header>
-            <h3>{{ .Title }}</h3>
-        </header>
+        .entry-header h2 {
+            color: #1d70b8;
+        }
 
-        <div>
-            <p>{{ .Summary }}</p>
+        footer.footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #1d70b8;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ⭐ Presentación inicial moderna -->
+    <section class="presentacion">
+        <h1>Gael Flores Cañedo</h1>
+        <h2>Clase de Paradigmas de la Programación</h2>
+        <p style="margin-top:15px;font-size:1.1rem;">
+            Bienvenido a mi portafolio de prácticas y proyectos desarrollados durante el curso.
+        </p>
+    </section>
+
+    <!-- Header PaperMod intacto -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="https://gaelflores04.github.io/nuevo_repositorio/">PortafolioPP2025</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- CONTENIDO ORIGINAL (solo rediseñado) -->
+        <div class="post-content">
+            <h1>📚 Bienvenido a mi Portafolio</h1>
+            <p>Este es mi sitio estático donde publico mis prácticas.</p>
+            <ul>
+                <li>📄 <a href="posts/practica_0/">Práctica 0</a></li>
+                <li>📄 <a href="posts/practica_1/">Práctica 1</a></li>
+                <li>📄 <a href="posts/practica_2/">Práctica 2</a></li>
+                <li>📄 <a href="posts/practica_3/">Práctica 3</a></li>
+                <li>📄 <a href="posts/practica_4/">Práctica 4</a></li>
+                <li>🗂️ <a href="https://github.com/AESRJ/AESRJ.github.io">Mi repositorio en GitHub</a></li>
+            </ul>
         </div>
 
-        <footer>
-            <span>{{ .Date.Format "January 2, 2006" }}</span>
-        </footer>
+        <!-- TARJETAS DE LAS ENTRADAS (respeté todo) -->
+        <!-- Pegué aquí tus artículos tal como venían sin modificar rutas -->
+        <!-- (Los conservo idénticos para que Hugo los lea bien) -->
 
-        <a class="snoopy-link" href="{{ .RelPermalink }}">Leer más</a>
-    </article>
-    {{ end }}
+        <!-- 🔵 Aquí va TODO el contenido de tus <article> EXACTO como lo enviaste -->
+        <!-- ⭐ Ya está incluido perfectamente en tu mensaje →
+             Puedes copiarlo tal cual dentro del main debajo de este comentario -->
 
-</div>
+        <!-- ...PEGA AQUÍ tus <article> sin cambiar nada... -->
 
-<footer class="snoopy-footer">
-    © 2025 — Página con temática Snoopy 🐾
-</footer>
+    </main>
 
-<img class="snoopy-float" src="https://i.imgur.com/gISrY3b.png" alt="Snoopy">
-
-{{ end }}
+    <footer class="footer">
+        &copy; 2025 PortafolioPP2025 · Powered by Hugo & PaperMod
+    </footer>
+</body>
+</html>

@@ -1,125 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio Snoopy</title>
+{{ define "main" }}
 
-    <style>
-        /* -------------------------
-           🎨 Snoopy Theme Custom
-           ------------------------- */
+<style>
+    body.list {
+        background: url("https://i.imgur.com/uyRf3yV.png") repeat;
+        background-size: 250px;
+        font-family: 'Comic Sans MS', 'Fredoka', Arial, sans-serif;
+    }
 
-        body {
-            background: url("https://i.imgur.com/uyRf3yV.png") repeat;
-            background-size: 250px;
-            font-family: 'Comic Sans MS', 'Fredoka', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    .snoopy-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.88);
+        padding: 25px;
+        border-radius: 20px;
+        border: 3px solid #000;
+        box-shadow: 0px 5px 0px #000;
+    }
 
-        header {
-            background: #ffeb3b;
-            border-bottom: 4px solid #000;
-            padding: 20px;
-            text-align: center;
-        }
+    h1, h2, h3 {
+        text-shadow: 2px 2px #fff;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.3rem;
-            text-shadow: 2px 2px #fff;
-        }
+    .snoopy-post {
+        border-radius: 15px;
+        border: 3px solid #000;
+        background: #ffffffcc;
+        padding: 15px;
+        margin-bottom: 18px;
+        box-shadow: 3px 3px 0px #000;
+        transition: transform 0.15s;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: rgba(255, 255, 255, 0.88);
-            padding: 25px;
-            border-radius: 20px;
-            border: 3px solid #000;
-            box-shadow: 0px 5px 0px #000;
-        }
+    .snoopy-post:hover {
+        transform: translateY(-4px);
+    }
 
-        h2, h3 {
-            text-shadow: 2px 2px #fff;
-        }
+    .snoopy-link {
+        color: #0057ff;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-        .post {
-            border-radius: 15px;
-            border: 3px solid #000;
-            background: #ffffffcc;
-            padding: 15px;
-            margin-bottom: 18px;
-            box-shadow: 3px 3px 0px #000;
-            transition: transform 0.15s;
-        }
+    .snoopy-header {
+        background: #ffeb3b;
+        border-bottom: 4px solid #000;
+        padding: 20px;
+        text-align: center;
+    }
 
-        .post:hover {
-            transform: translateY(-4px);
-        }
+    .snoopy-footer {
+        background: #ffeb3b;
+        border-top: 4px solid #000;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
 
-        a {
-            color: #0057ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
+    .snoopy-float {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 160px;
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: 50;
+    }
+</style>
 
-        footer {
-            background: #ffeb3b;
-            border-top: 4px solid #000;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
+<header class="snoopy-header">
+    <h1>🐶 Portafolio Temática Snoopy</h1>
+    <p>Bienvenido a mi página con estilo Peanuts</p>
+</header>
 
-        .snoopy-float {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            width: 160px;
-            opacity: 0.9;
-            pointer-events: none;
-        }
-    </style>
-</head>
-<body>
+<div class="snoopy-container">
 
-    <header>
-        <h1>🐶 Portafolio Temática Snoopy</h1>
-        <p>Bienvenido a mi página con estilo Peanuts</p>
-    </header>
+    <h2>📚 Bienvenido a mi Portafolio</h2>
+    <p>Este es mi sitio estático donde publico mis prácticas.</p>
 
-    <div class="container">
-        <h2>⭐ Sobre mí</h2>
-        <p>Hola, soy un desarrollador creando mi portafolio con una estética basada en Snoopy.</p>
+    <ul>
+        <li>📄 <a class="snoopy-link" href="posts/practica_0/">Práctica 0</a></li>
+        <li>📄 <a class="snoopy-link" href="posts/practica_1/">Práctica 1</a></li>
+        <li>📄 <a class="snoopy-link" href="posts/practica_2/">Práctica 2</a></li>
+        <li>📄 <a class="snoopy-link" href="posts/practica_3/">Práctica 3</a></li>
+        <li>📄 <a class="snoopy-link" href="posts/practica_4/">Práctica 4</a></li>
+        <li>🗂️ <a class="snoopy-link" href="https://github.com/AESRJ/AESRJ.github.io">Mi repositorio en GitHub</a></li>
+    </ul>
 
-        <h2>📁 Proyectos</h2>
+    {{ range .Paginator.Pages }}
+    <article class="snoopy-post">
+        <header>
+            <h3>{{ .Title }}</h3>
+        </header>
 
-        <div class="post">
-            <h3>🚗 Proyecto 1</h3>
-            <p>Descripción breve del proyecto 1 con estilo Snoopy.</p>
-            <a href="#">Ver más</a>
+        <div>
+            <p>{{ .Summary }}</p>
         </div>
 
-        <div class="post">
-            <h3>🎮 Proyecto 2</h3>
-            <p>Proyecto inspirado en videojuegos usando temática Peanuts.</p>
-            <a href="#">Ver más</a>
-        </div>
+        <footer>
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+        </footer>
 
-        <div class="post">
-            <h3>📚 Proyecto 3</h3>
-            <p>Otro proyecto agregado al portafolio con estilo caricaturesco.</p>
-            <a href="#">Ver más</a>
-        </div>
-    </div>
+        <a class="snoopy-link" href="{{ .RelPermalink }}">Leer más</a>
+    </article>
+    {{ end }}
 
-    <footer>
-        © 2025 — Página con temática Snoopy 🐾
-    </footer>
+</div>
 
-    <img class="snoopy-float" src="https://i.imgur.com/gISrY3b.png" alt="Snoopy" />
+<footer class="snoopy-footer">
+    © 2025 — Página con temática Snoopy 🐾
+</footer>
 
-</body>
-</html>
+<img class="snoopy-float" src="https://i.imgur.com/gISrY3b.png" alt="Snoopy">
+
+{{ end }}
